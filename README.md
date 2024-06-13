@@ -13,13 +13,13 @@ Sigue estos pasos para configurar y ejecutar el proyecto en tu máquina local:
    cd AnyDesk-IP-Track
     ```
 
-2 **Instalar las dependencias**
+2. **Instalar las dependencias**
 
-Las dependencias se instalan automáticamente, pero si hay algun error puedes instalarlas mediante el siguiente comando:
+   Las dependencias se instalan automáticamente, pero si hay algun error puedes instalarlas mediante el siguiente comando:
 
-   ```sh
-    pip install -r requirements.txt
-   ```
+    ```sh
+   pip install -r requirements.txt
+    ```
 
 ## ▶️ Uso
 
