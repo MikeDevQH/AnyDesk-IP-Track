@@ -15,11 +15,11 @@ Sigue estos pasos para configurar y ejecutar el proyecto en tu máquina local:
 
 2 **Instalar las dependencias**
 
-Las dependencias se instalan automáticamente, pero si hay algun error puedes instalarlas mediante el siguiente comando
+Las dependencias se instalan automáticamente, pero si hay algun error puedes instalarlas mediante el siguiente comando:
 
-    ```sh
+   ```sh
     pip install -r requirements.txt
-    ```
+   ```
 
 ## ▶️ Uso
 
