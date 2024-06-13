@@ -15,6 +15,8 @@ Sigue estos pasos para configurar y ejecutar el proyecto en tu máquina local:
 
 2 **Instalar las dependencias**
 
+Las dependencias se instalan automáticamente, pero si hay algun error puedes instalarlas mediante el siguiente comando
+
    ```sh
   pip install -r requirements.txt
   ```
@@ -39,19 +41,23 @@ El programa mostrará un banner de bienvenida y comenzará a monitorizar el proc
    ██║  ██║██║ ╚███║   ██║   ██████╔╝███████╗██████╔╝██║ ╚██╗
    ╚═╝  ╚═╝╚═╝  ╚══╝   ╚═╝   ╚═════╝ ╚══════╝╚═════╝╚═╝  ╚═╝
 
-                  ██╗██████╗               
-                  ██║██╔══██╗              
-                  ██║██████╔╝              
-                  ██║██╔═══╝               
-                  ██║██║                   
-                  ╚═╝╚═╝                   
-                                                     By MikeDevQH
-   ██████╗ ███████╗ ██████╗█████╗ ██╗     ██╗   ██╗███████╗██████╗ 
-   ██╔══██╗██╔════╝██╔════╝██╔══██╗██║    ██║   ██║██╔════╝██╔══██╗
-   ███████║█████╗  ╚█████╗ ██║  ██║██║    ╚██╗ ██╔╝█████╗  ██████╔╝
-   ██╔══██║██╔══╝   ╚═══██╗██║  ██║██║     ╚████╔╝ ██╔══╝  ██╔══██╗
-   ██║  ██║███████╗██████╔╝╚█████╔╝███████╗ ╚██╔╝  ███████╗██║  ██║
-   ╚═╝  ╚═╝╚══════╝╚═════╝  ╚════╝ ╚══════╝  ╚═╝   ╚══════╝╚═╝  ╚═╝
+
+                      ██╗██████╗               
+                      ██║██╔══██╗              
+                      ██║██████╔╝              
+                      ██║██╔═══╝               
+                      ██║██║                   
+                      ╚═╝╚═╝                   
+                                      By MikeDevQH
+                                                           
+        ████████╗██████╗  █████╗  ██████╗██╗  ██╗                  
+        ╚══██╔══╝██╔══██╗██╔══██╗██╔════╝██║ ██╔╝                  
+           ██║   ██████╔╝███████║██║     █████╔╝                   
+           ██║   ██╔══██╗██╔══██║██║     ██╔═██╗                   
+           ██║   ██║  ██║██║  ██║╚██████╗██║  ██╗                  
+           ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝╚═╝  ╚═╝                  
+                                       
+   
 waiting for connection...
 
 connection established!
