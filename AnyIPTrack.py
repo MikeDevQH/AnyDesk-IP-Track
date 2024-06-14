@@ -135,7 +135,7 @@ while 1:
                     socket.inet_pton(socket.AF_INET, ip_address)  # Check the IP address
 
                     r = requests.get(
-                        f'http://ip-api.com/json/{ip_address}?fields=status,message,continent,continentCode,country,countryCode,region,regionName,city,timezone,isp,org,as,asname,reverse,query')
+                        f'http://ip-api.com/json/{ip_address}?fields=status,message,continent,continentCode,country,countryCode,region,regionName,lat,lon,city,timezone,isp,org,as,asname,reverse,query')
                     r_json = r.json()
 
                     if r_json['status'] == 'success':
@@ -151,8 +151,11 @@ while 1:
                         org = r_json['org']
                         as_ = r_json['as']
                         asname = r_json['asname']
-
-
+                        lat = r_json['lat']
+                        lon = r_json['lon']
+                        
+                        print(f"latitud --> {lat}")
+                        print(f"longitud --> {lon}")
                         print(f"  {Fore.LIGHTWHITE_EX}+------------------+--------------------------------------+")
                         print(f'  {Fore.LIGHTWHITE_EX}|   {Fore.LIGHTBLUE_EX}IP         -->   {Fore.LIGHTCYAN_EX}{remote_ip:<19}')
                         print(f"  {Fore.LIGHTWHITE_EX}+------------------+--------------------------------------+")
@@ -165,6 +168,10 @@ while 1:
                         print(f"  {Fore.LIGHTWHITE_EX}|   {Fore.LIGHTBLUE_EX}City       -->   {Fore.LIGHTCYAN_EX}{city:<19}")
                         print(f"  {Fore.LIGHTWHITE_EX}+------------------+--------------------------------------+")
                         print(f"  {Fore.LIGHTWHITE_EX}|   {Fore.LIGHTBLUE_EX}Timezone   -->   {Fore.LIGHTCYAN_EX}{timezone:<25}")
+                        print(f"  {Fore.LIGHTWHITE_EX}+------------------+--------------------------------------+")
+                        print(f"  {Fore.LIGHTWHITE_EX}|   {Fore.LIGHTBLUE_EX}Lat        -->   {Fore.LIGHTCYAN_EX}{lat}")
+                        print(f"  {Fore.LIGHTWHITE_EX}+------------------+--------------------------------------+")
+                        print(f"  {Fore.LIGHTWHITE_EX}|   {Fore.LIGHTBLUE_EX}Lon        -->   {Fore.LIGHTCYAN_EX}{lon}")
                         print(f"  {Fore.LIGHTWHITE_EX}+------------------+--------------------------------------+")
                         print(f"  {Fore.LIGHTWHITE_EX}|   {Fore.LIGHTBLUE_EX}ISP        -->   {Fore.LIGHTCYAN_EX}{isp:<25}")
                         print(f"  {Fore.LIGHTWHITE_EX}+------------------+--------------------------------------+")
