@@ -3,3 +3,4 @@ __pycache__/
 *.pyo
 .vscode/
 .env
+AnyDesk-IP-Track.code-workspace
