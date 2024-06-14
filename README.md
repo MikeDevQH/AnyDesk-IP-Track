@@ -1,6 +1,6 @@
-# 🌐 AnyIPTrack 1.0 - AnyDesk IP Address Resolver 🖥️
+# 🌐 AnyIPTrack 2.0 - AnyDesk IP Address Resolver 🖥️
 
-**AnyIPTrack 1.0** es una herramienta diseñada para monitorizar el proceso de AnyDesk en tu sistema, capturar la dirección IP remota cuando se establece una conexión, y mostrar información geográfica detallada sobre dicha IP. Esta es la primera versión de la herramienta.
+**AnyIPTrack** es una herramienta diseñada para monitorizar el proceso de AnyDesk en tu sistema, capturar la dirección IP remota cuando se establece una conexión, y mostrar información geográfica detallada sobre dicha IP. Esta es la primera versión de la herramienta.
 
 ## 🛠️ Instalación
 
@@ -60,18 +60,25 @@ El programa mostrará un banner de bienvenida y comenzará a monitorizar el proc
            ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝╚═╝  ╚═╝
  waiting for connection...
  connection established!
-  +-----------+--------------------------------------+
-  |   IP       -->   149.40.58.148
-  +-----------+--------------------------------------+
-  |   Country  -->   California
-  +-----------+--------------------------------------+
-  |   City     -->   Los Angeles
-  +-----------+--------------------------------------+
-  |   ISP      -->   Datacamp Limited
-  +-----------+--------------------------------------+
-  |   AS       -->   CDNEXT (AS212238 Datacamp Limited)
-  +-----------+--------------------------------------+
-
+  +------------------+--------------------------------------+
+  |   IP         -->   185.107.56.220     
+  +------------------+--------------------------------------+
+  |   Continent  -->   Europe (EU)
+  +------------------+--------------------------------------+
+  |   Country    -->   Netherlands (NL)
+  +------------------+--------------------------------------+
+  |   Region     -->   North Holland (NH)
+  +------------------+--------------------------------------+
+  |   City       -->   Amsterdam
+  +------------------+--------------------------------------+
+  |   Timezone   -->   Europe/Amsterdam
+  +------------------+--------------------------------------+
+  |   ISP        -->   NForce Entertainment B.V.
+  +------------------+--------------------------------------+
+  |   ORG        -->   ORG-NE3-RIPE
+  +------------------+--------------------------------------+
+  |   AS         -->   NFORCE (AS43350 NForce Entertainment B.V.)
+  +------------------+--------------------------------------+
 
     [>] Closing AnyIP... # Created by MikeDevQH
 Press 'enter' to exit...
