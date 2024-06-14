@@ -135,28 +135,43 @@ while 1:
                     socket.inet_pton(socket.AF_INET, ip_address)  # Check the IP address
 
                     r = requests.get(
-                        f'http://ip-api.com/json/{ip_address}?fields=status,message,continentCode,regionName,city,isp,org,as,asname,query')
+                        f'http://ip-api.com/json/{ip_address}?fields=status,message,continent,continentCode,country,countryCode,region,regionName,city,timezone,isp,org,as,asname,reverse,query')
                     r_json = r.json()
 
                     if r_json['status'] == 'success':
+                        continent = r_json['continent']
+                        continentCode = r_json['continentCode']
+                        country = r_json['country']
+                        countryCode = r_json['countryCode']
+                        region = r_json['region']
                         regionName = r_json['regionName']
                         city = r_json['city']
+                        timezone = r_json['timezone']
                         isp = r_json['isp']
+                        org = r_json['org']
                         as_ = r_json['as']
                         asname = r_json['asname']
 
 
-                        print(f"  {Fore.LIGHTWHITE_EX}+-----------+--------------------------------------+")
-                        print(f'  {Fore.LIGHTWHITE_EX}|   {Fore.LIGHTBLUE_EX}IP       -->   {Fore.LIGHTCYAN_EX}{remote_ip:<19}')
-                        print(f"  {Fore.LIGHTWHITE_EX}+-----------+--------------------------------------+")
-                        print(f"  {Fore.LIGHTWHITE_EX}|   {Fore.LIGHTBLUE_EX}Region  -->   {Fore.LIGHTCYAN_EX}{regionName:<19}")
-                        print(f"  {Fore.LIGHTWHITE_EX}+-----------+--------------------------------------+")
-                        print(f"  {Fore.LIGHTWHITE_EX}|   {Fore.LIGHTBLUE_EX}City     -->   {Fore.LIGHTCYAN_EX}{city:<19}")
-                        print(f"  {Fore.LIGHTWHITE_EX}+-----------+--------------------------------------+")
-                        print(f"  {Fore.LIGHTWHITE_EX}|   {Fore.LIGHTBLUE_EX}ISP      -->   {Fore.LIGHTCYAN_EX}{isp:<25}")
-                        print(f"  {Fore.LIGHTWHITE_EX}+-----------+--------------------------------------+")
-                        print(f"  {Fore.LIGHTWHITE_EX}|   {Fore.LIGHTBLUE_EX}AS       -->   {Fore.LIGHTCYAN_EX}{asname} ({Fore.LIGHTBLUE_EX}{as_:<22}{Fore.LIGHTCYAN_EX})")
-                        print(f"  {Fore.LIGHTWHITE_EX}+-----------+--------------------------------------+")
+                        print(f"  {Fore.LIGHTWHITE_EX}+------------------+--------------------------------------+")
+                        print(f'  {Fore.LIGHTWHITE_EX}|   {Fore.LIGHTBLUE_EX}IP         -->   {Fore.LIGHTCYAN_EX}{remote_ip:<19}')
+                        print(f"  {Fore.LIGHTWHITE_EX}+------------------+--------------------------------------+")
+                        print(f"  {Fore.LIGHTWHITE_EX}|   {Fore.LIGHTBLUE_EX}Continent  -->   {Fore.LIGHTCYAN_EX}{continent} ({continentCode:})")
+                        print(f"  {Fore.LIGHTWHITE_EX}+------------------+--------------------------------------+")
+                        print(f"  {Fore.LIGHTWHITE_EX}|   {Fore.LIGHTBLUE_EX}Country    -->   {Fore.LIGHTCYAN_EX}{country} ({countryCode})")
+                        print(f"  {Fore.LIGHTWHITE_EX}+------------------+--------------------------------------+")
+                        print(f"  {Fore.LIGHTWHITE_EX}|   {Fore.LIGHTBLUE_EX}Region     -->   {Fore.LIGHTCYAN_EX}{regionName} ({region:})")
+                        print(f"  {Fore.LIGHTWHITE_EX}+------------------+--------------------------------------+")
+                        print(f"  {Fore.LIGHTWHITE_EX}|   {Fore.LIGHTBLUE_EX}City       -->   {Fore.LIGHTCYAN_EX}{city:<19}")
+                        print(f"  {Fore.LIGHTWHITE_EX}+------------------+--------------------------------------+")
+                        print(f"  {Fore.LIGHTWHITE_EX}|   {Fore.LIGHTBLUE_EX}Timezone   -->   {Fore.LIGHTCYAN_EX}{timezone:<25}")
+                        print(f"  {Fore.LIGHTWHITE_EX}+------------------+--------------------------------------+")
+                        print(f"  {Fore.LIGHTWHITE_EX}|   {Fore.LIGHTBLUE_EX}ISP        -->   {Fore.LIGHTCYAN_EX}{isp:<25}")
+                        print(f"  {Fore.LIGHTWHITE_EX}+------------------+--------------------------------------+")
+                        print(f"  {Fore.LIGHTWHITE_EX}|   {Fore.LIGHTBLUE_EX}ORG        -->   {Fore.LIGHTCYAN_EX}{org:<25}")
+                        print(f"  {Fore.LIGHTWHITE_EX}+------------------+--------------------------------------+")
+                        print(f"  {Fore.LIGHTWHITE_EX}|   {Fore.LIGHTBLUE_EX}AS         -->   {Fore.LIGHTCYAN_EX}{asname} ({Fore.LIGHTBLUE_EX}{as_:<22}{Fore.LIGHTCYAN_EX})")
+                        print(f"  {Fore.LIGHTWHITE_EX}+------------------+--------------------------------------+")
 
 
                     else:
