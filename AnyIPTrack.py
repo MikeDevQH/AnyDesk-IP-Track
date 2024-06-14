@@ -135,23 +135,15 @@ while 1:
                     socket.inet_pton(socket.AF_INET, ip_address)  # Check the IP address
 
                     r = requests.get(
-                        f'http://ip-api.com/json/{ip_address}?fields=status,message,continent,continentCode,country,countryCode,region,regionName,city,timezone,isp,org,as,asname,reverse,query')
+                        f'http://ip-api.com/json/{ip_address}?fields=status,message,continentCode,regionName,city,isp,org,as,asname,query')
                     r_json = r.json()
 
                     if r_json['status'] == 'success':
-                        continent = r_json['continent']
-                        continentCode = r_json['continentCode']
-                        country = r_json['country']
-                        countryCode = r_json['countryCode']
-                        region = r_json['region']
                         regionName = r_json['regionName']
                         city = r_json['city']
-                        timezone = r_json['timezone']
                         isp = r_json['isp']
-                        org = r_json['org']
                         as_ = r_json['as']
                         asname = r_json['asname']
-                        reverse = r_json['reverse']
 
 
                         print(f"  {Fore.LIGHTWHITE_EX}+-----------+--------------------------------------+")
