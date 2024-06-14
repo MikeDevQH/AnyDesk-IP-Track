@@ -1,6 +1,6 @@
 # 🌐 AnyIPTrack 1.0 - AnyDesk IP Address Resolver 🖥️
 
-**Anny 1.0** es una herramienta diseñada para monitorizar el proceso de AnyDesk en tu sistema, capturar la dirección IP remota cuando se establece una conexión, y mostrar información geográfica detallada sobre dicha IP. Esta es la primera versión de la herramienta.
+**AnyIPTrack 1.0** es una herramienta diseñada para monitorizar el proceso de AnyDesk en tu sistema, capturar la dirección IP remota cuando se establece una conexión, y mostrar información geográfica detallada sobre dicha IP. Esta es la primera versión de la herramienta.
 
 ## 🛠️ Instalación
 
@@ -13,12 +13,12 @@ Sigue estos pasos para configurar y ejecutar el proyecto en tu máquina local:
    cd AnyDesk-IP-Track
     ```
 
-2 **Instalar las dependencias**
+2. **Instalar las dependencias**
 
-Las dependencias se instalan automáticamente, pero si hay algun error puedes instalarlas mediante el siguiente comando
+   Las dependencias se instalan automáticamente, pero si hay algun error puedes instalarlas mediante el siguiente comando:
 
     ```sh
-    pip install -r requirements.txt
+   pip install -r requirements.txt
     ```
 
 ## ▶️ Uso
