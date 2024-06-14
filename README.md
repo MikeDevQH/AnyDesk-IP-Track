@@ -1,4 +1,4 @@
-# 🌐 AnyIPTrack 2.0 - AnyDesk IP Address Resolver 🖥️
+# 🌐 AnyIPTrack - AnyDesk IP Address Resolver 🖥️
 
 **AnyIPTrack** es una herramienta diseñada para monitorizar el proceso de AnyDesk en tu sistema, capturar la dirección IP remota cuando se establece una conexión, y mostrar información geográfica detallada sobre dicha IP. Esta es la primera versión de la herramienta.
 
