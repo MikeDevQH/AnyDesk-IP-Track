@@ -154,8 +154,6 @@ while 1:
                         lat = r_json['lat']
                         lon = r_json['lon']
                         
-                        print(f"latitud --> {lat}")
-                        print(f"longitud --> {lon}")
                         print(f"  {Fore.LIGHTWHITE_EX}+------------------+--------------------------------------+")
                         print(f'  {Fore.LIGHTWHITE_EX}|   {Fore.LIGHTBLUE_EX}IP         -->   {Fore.LIGHTCYAN_EX}{remote_ip:<19}')
                         print(f"  {Fore.LIGHTWHITE_EX}+------------------+--------------------------------------+")
