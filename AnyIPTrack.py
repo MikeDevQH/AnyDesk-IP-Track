@@ -157,7 +157,7 @@ while 1:
                         print(f"  {Fore.LIGHTWHITE_EX}+-----------+--------------------------------------+")
                         print(f'  {Fore.LIGHTWHITE_EX}|   {Fore.LIGHTBLUE_EX}IP       -->   {Fore.LIGHTCYAN_EX}{remote_ip:<19}')
                         print(f"  {Fore.LIGHTWHITE_EX}+-----------+--------------------------------------+")
-                        print(f"  {Fore.LIGHTWHITE_EX}|   {Fore.LIGHTBLUE_EX}Country  -->   {Fore.LIGHTCYAN_EX}{regionName:<19}")
+                        print(f"  {Fore.LIGHTWHITE_EX}|   {Fore.LIGHTBLUE_EX}Region  -->   {Fore.LIGHTCYAN_EX}{regionName:<19}")
                         print(f"  {Fore.LIGHTWHITE_EX}+-----------+--------------------------------------+")
                         print(f"  {Fore.LIGHTWHITE_EX}|   {Fore.LIGHTBLUE_EX}City     -->   {Fore.LIGHTCYAN_EX}{city:<19}")
                         print(f"  {Fore.LIGHTWHITE_EX}+-----------+--------------------------------------+")
