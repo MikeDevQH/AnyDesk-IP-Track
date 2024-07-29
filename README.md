@@ -6,14 +6,20 @@
 
 Sigue estos pasos para configurar y ejecutar el proyecto en tu máquina local:
 
-1. **Clonar el repositorio**
+3. **Descargar e instalar Python**
+   - Descarga [Python](https://www.python.org/downloads/) instalalo en tu sistema
+
+2. **Clonar el repositorio**
+
+    Desde la terminal ejecuta los siguientes comandos en la ruta donde quieras tener la herramienta
+     
 
     ```sh
    git clone https://github.com/MikeDevQH/AnyDesk-IP-Track.git
    cd AnyDesk-IP-Track
     ```
 
-2. **Instalar las dependencias**
+4. **Instalar las dependencias**
 
    Las dependencias se instalan automáticamente, pero si hay algun error puedes instalarlas mediante el siguiente comando:
 
